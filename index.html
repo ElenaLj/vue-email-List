@@ -12,11 +12,12 @@
 
     <div id="root">
         <div class="mails">
-            <ul>
+            <ul v-if="emails.length == 10">
                 <li v-for="email in emails">
                     {{email}}
                 </li>
             </ul>
+            <div v-else>Generating emails...</div>
         </div>
     </div>
 
