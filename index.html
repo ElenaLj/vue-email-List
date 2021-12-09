@@ -13,8 +13,8 @@
     <div id="root">
         <div class="mails">
             <ul>
-                <li for="(email, index) in emails">
-                    {{emails[index]}}
+                <li v-for="email in emails">
+                    {{email}}
                 </li>
             </ul>
         </div>
